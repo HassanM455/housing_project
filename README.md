@@ -2,6 +2,7 @@
 
 Data cleaning : only a few attriutes had no information for houses well below the median price, partly due to the fact that cheaper houses did not have a pool, mason veneer walls, etc... If the NaN values were greater than 200, I dropped the attribute. For other's, I deleted the example for the training data if the NaN count was below 100.
 
+K_mean.py -- running k-means clustering algorithm to create clusters of data points, then attempting to do statistical analysis on each cluster to see if we can find any hidden information. 
 
 Sifter.py -- contains a classification based neural net that places houses in 4 categories, which are based of the quartiles of the training data's 'SalePrice' attribute. Currently, at best, it has achieved an accuracy score of 90% based on a specific topology of the architecture. Still in the process of hypertuning the parameters 
 
